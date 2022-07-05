@@ -8,72 +8,103 @@
     <meta name="keywords" content="resume, cv, danil">
     <meta name="description" content="Это сайт - резюме Цокура Данила">
     <title>Tsokur Resume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="ava.jpg" alt="Ошибка" width="150">
+    <div class="container">
+        <div class="info">
+            <img src="ava.jpg" alt="Ошибка" class="avatar">
 
-    <h1>Цокур Данил</h1>
 
-    <p>Я работаю инженером-программистом в компании <strong>Spark-Lux</strong></p>
+            <div class="info-text">
+            <h1>Цокур Данил</h1>
+            <p>Я работаю инженером-программистом в компании <span>Spark-Lux</span></p>
+            <p>Занимаюсь автоматизацией пищевого производства. Люблю путешествовать и программировать.</p>
 
-    <p>Занимаюсь <em><strong>автоматизацией пищевого производства</strong></em>. Люблю путешествовать и программировать.</p>
+                <h4>Список социальных сетей:</h4>
+                <div class="social">
+                    <a href="https://t.me/daniltsokur" target="_blank">Telegram </a>|
+                    <a href="https://www.facebook.com/danil.tsokur/" target="_blank">Facebook</a>
+                </div>
 
-    <p><strong>Список социальных сетей:</strong></p>
+            </div>
+        </div>
 
-    <a href="https://t.me/daniltsokur" target="_blank">Telegram </a>|
-    <a href="https://www.facebook.com/danil.tsokur/" target="_blank">Facebook</a>
-    <h2><strong>Мои хобби:</strong></h2>
-    <ul>
-        <li>Путешествия</li>
-        <li>Спорт</li>
-        <li>Фильмы</li>
-        <li>Кодинг</li>
-    </ul>
 
-    <h2>Опыт работы</h2>
 
-    <table width="400" border="2">
-        <thead> <!--шапка таблицы-->
-        <tr><!--tr строка-->
-            <th>Название </th> <!--td столбцы-->
-            <th>Должность</th>
-            <th>Год</th>
-        </tr>
-        </thead>
+        <div class="card hobby">
+            <h2><strong>Мои хобби:</strong></h2>
+            <ul>
+                <li>Путешествия</li>
+                <li>Спорт</li>
+                <li>Фильмы</li>
+                <li>Программирование</li>
+            </ul>
+        </div>
 
-        <tbody> <!--контент таблицы-->
-        <tr>
-            <td>TTU</td>
-            <td>Engineer</td>
-            <td>2016-2018</td>
-        </tr>
 
-        <tr>
-            <td>Spark-Lux</td>
-            <td>Production automation engineer</td>
-            <td>2018-now</td>
-        </tr>
-        </tbody>
-    </table>
+        <div class="card work">
+            <h2>Опыт работы</h2>
 
-    <h2>Связаться со мной</h2>
-    <div>
-        <label for="name"><strong>Ваше имя:</strong> </label>
-        <input type="text" id="name" placeholder="Введите имя">
+            <table width="400" border="1" class="table">
+                <thead> <!--шапка таблицы-->
+                <tr><!--tr строка-->
+                    <th>Название </th> <!--td столбцы-->
+                    <th>Должность</th>
+                    <th>Год</th>
+                </tr>
+                </thead>
+
+                <tbody> <!--контент таблицы-->
+                <tr>
+                    <td>ЗНТУ</td>
+                    <td>Студент (бакалавр)</td>
+                    <td>2012-2016</td>
+                </tr>
+
+                <tr>
+                    <td>ТТУ</td>
+                    <td>Студент (магистратура)</td>
+                    <td>2016-2018</td>
+                </tr>
+
+                <tr>
+                    <td>Spark-Lux</td>
+                    <td>Инженер автоматизации производства</td>
+                    <td>2018-сейчас</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <form action="/" class="form">
+            <h2>Связаться со мной</h2>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name"><strong>Ваше имя:</strong> </label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+
+                <div class="form-group">
+                    <label for="email"><strong>Ваш email:</strong> </label>
+                    <input type="text" id="email" placeholder="Введите email">
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label for="message"><strong>Ваше сообщение:</strong> </label>
+                <br>
+                <textarea name="" id="message" cols="30" rows="5" placeholder="Введите сообщение"></textarea>
+            </div>
+
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+
+
     </div>
-
-    <div>
-        <label for="email"><strong>Ваш email:</strong> </label>
-        <input type="text" id="email" placeholder="Введите email">
-    </div>
-
-    <div>
-        <label for="message"><strong>Ваше сообщение:</strong> </label>
-        <br>
-        <textarea name="" id="message" cols="30" rows="5" placeholder="Введите сообщение"></textarea>
-    </div>
-
-    <button type="submit">Отправить</button>
 
 
 </body>
